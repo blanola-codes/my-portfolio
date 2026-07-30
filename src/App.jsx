@@ -6,7 +6,12 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import {
+FaHtml5,
+FaCss3Alt,
+FaJs,
+FaReact
+} from "react-icons/fa";
 
 import "./App.css";
 

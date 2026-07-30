@@ -38,15 +38,6 @@ JavaScript and CSS.
 
 </p>
 
-<a
-href="/resume.pdf"
-className="btn btn-primary"
->
-
-Download Resume
-
-</a>
-
 </div>
 
 </div>

@@ -4,7 +4,13 @@ function Contact() {
 
       <div className="contact-left">
 
-        <h2>Let's Connect</h2>
+        <h3>Let's Build Something Together!</h3>
+
+<p>
+I'm currently looking for internships and
+frontend opportunities.
+Feel free to reach out.
+</p>
 
         <p>
           📧{" "}

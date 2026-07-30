@@ -24,7 +24,7 @@ function Navbar() {
       <nav className="navbar">
 
         <div className="logo">
-          BJD
+          BJD.
         </div>
 
 

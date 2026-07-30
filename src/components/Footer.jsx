@@ -1,16 +1,17 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 function Footer() {
   return (
     <footer className="site-footer">
       <p>&copy; 2026 Blanola Joylin Dsouza. Built with React ❤️</p>
 
-      <nav aria-label="Social Media Links">
+      <div className="footer-icons">
         <a
           href="https://github.com/blanola-codes"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub
+          <FaGithub />
         </a>
 
         <a
@@ -18,9 +19,9 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          LinkedIn
+          <FaLinkedin />
         </a>
-      </nav>
+      </div>
     </footer>
   );
 }

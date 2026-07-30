@@ -80,10 +80,10 @@ function Projects() {
           data-year="2026"
         >
           <img
-            src={bmiImg}
-            alt="BMI Calculator App Screenshot"
-            width="300"
-          />
+src={bmiImg}
+className="mobile-image"
+alt="BMI"
+/>
 
           <h3>BMI Calculator App</h3>
 
