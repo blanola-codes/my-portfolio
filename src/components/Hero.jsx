@@ -1,24 +1,47 @@
 function Hero() {
   return (
-    <section id="hero" className="hero-section">
-      <h1>
-        Hi, I'm <span>Blanola Joylin Dsouza</span> 👋
-      </h1>
+    <section className="hero-section">
 
-      <p>
-        AI & ML Student | Aspiring Web Developer | Learning React
-      </p>
+<h1>
+Hi, I'm <span>Blanola Joylin Dsouza</span> 👋
+</h1>
 
-      <div className="hero-buttons">
-        <a href="#projects" className="btn btn-primary">
-          View Projects
-        </a>
+<h3>
+AI & ML Student | Frontend Developer
+</h3>
 
-        <a href="#contact" className="btn">
-          Contact Me
-        </a>
-      </div>
-    </section>
+<p>
+I build responsive websites using HTML, CSS,
+JavaScript and React.
+</p>
+
+<div className="hero-buttons">
+
+<a href="#projects" className="btn btn-primary">
+View Projects
+</a>
+
+<a
+href="/resume.pdf"
+className="btn"
+>
+Download Resume
+</a>
+
+</div>
+<div className="tech-stack">
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+<span>React</span>
+
+</div>
+
+</section>
   );
 }
 

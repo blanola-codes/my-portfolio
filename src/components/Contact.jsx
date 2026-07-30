@@ -1,45 +1,46 @@
 function Contact() {
   return (
-    <section id="contact" className="contact-section">
-      <h2>Get in Touch</h2>
+    <section className="contact-section">
 
-      <form noValidate>
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-          />
-        </div>
+      <div className="contact-left">
 
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-          />
-        </div>
+        <h2>Let's Connect</h2>
 
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows={5}
-            required
-          ></textarea>
-        </div>
+        <p>
+          📧{" "}
+          <a href="mailto:dsouzablanola@gmail.com">
+            dsouzablanola@gmail.com
+          </a>
+        </p>
 
-        <div>
-          <button className="btn btn-primary" type="submit">
-            Send Message
-          </button>
-        </div>
-      </form>
+        <p>
+          💻{" "}
+          <a
+            href="https://github.com/YOUR_GITHUB_USERNAME"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </p>
+
+        <p>
+          💼{" "}
+          <a
+            href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </p>
+
+      </div>
+
+      <div className="contact-right">
+        {/* Your form */}
+      </div>
+
     </section>
   );
 }
