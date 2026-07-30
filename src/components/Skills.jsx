@@ -1,24 +1,25 @@
 function Skills() {
+  const skills = [
+    { name: "HTML", level: 90 },
+    { name: "CSS", level: 80 },
+    { name: "JavaScript", level: 75 },
+    { name: "React", level: 60 },
+  ];
+
   return (
     <section id="skills" className="skills-section">
       <h2>My Skills</h2>
 
       <div className="skills-grid">
-        <div className="skills-items" data-level="90">
-          HTML
-        </div>
-
-        <div className="skills-items" data-level="80">
-          CSS
-        </div>
-
-        <div className="skills-items" data-level="75">
-          JavaScript
-        </div>
-
-        <div className="skills-items" data-level="60">
-          React
-        </div>
+        {skills.map((skill) => (
+          <div
+            key={skill.name}
+            className="skills-items"
+            data-level={skill.level}
+          >
+            {skill.name}
+          </div>
+        ))}
       </div>
     </section>
   );
