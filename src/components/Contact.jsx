@@ -16,7 +16,7 @@ function Contact() {
         <p>
           💻{" "}
           <a
-            href="https://github.com/YOUR_GITHUB_USERNAME"
+            href="https://github.com/blanola-codes"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -27,7 +27,7 @@ function Contact() {
         <p>
           💼{" "}
           <a
-            href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/"
+            href="https://www.linkedin.com/in/blanola-joylin-dsouza-92278531a/"
             target="_blank"
             rel="noopener noreferrer"
           >
