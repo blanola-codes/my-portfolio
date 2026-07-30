@@ -12,12 +12,18 @@ function Skills() {
 
       <div className="skills-grid">
         {skills.map((skill) => (
-          <div
-            key={skill.name}
-            className="skills-items"
-            data-level={skill.level}
-          >
-            {skill.name}
+          <div className="skills-items" key={skill.name}>
+            <div className="skill-header">
+              <span>{skill.name}</span>
+              <span>{skill.level}%</span>
+            </div>
+
+            <div className="progress-bar">
+              <div
+                className="progress"
+                style={{ width: `${skill.level}%` }}
+              ></div>
+            </div>
           </div>
         ))}
       </div>
