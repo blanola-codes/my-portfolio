@@ -249,7 +249,19 @@ font-size:35px;
 margin-bottom:40px;
 
 }
+.greeting{
+    font-size:18px;
+    font-weight:600;
+    color:var(--primary);
+    margin-bottom:15px;
+    letter-spacing:0.5px;
+}
 
+.hero-description{
+    max-width:600px;
+    margin:20px auto;
+    line-height:1.8;
+}
 
 /* About */
 

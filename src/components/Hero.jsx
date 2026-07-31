@@ -1,47 +1,57 @@
 function Hero() {
+
+  const hour = new Date().getHours();
+
+  let greeting = "";
+
+  if (hour < 12) {
+    greeting = "Good Morning ☀️";
+  } else if (hour < 17) {
+    greeting = "Good Afternoon 🌤️";
+  } else if (hour < 21) {
+    greeting = "Good Evening 🌇";
+  } else {
+    greeting = "Good Night 🌙";
+  }
+
   return (
     <section className="hero-section">
 
-<h1>
-Hi, I'm <span>Blanola Joylin Dsouza</span> 👋
-</h1>
+      <p className="greeting">{greeting}</p>
 
-<h3>
-AI & ML Student | Frontend Developer
-</h3>
+      <h1>
+        Hi, I'm <span>Blanola Joylin Dsouza</span> 👋
+      </h1>
 
-<p>
-I build responsive websites using HTML, CSS,
-JavaScript and React.
-</p>
+      <h3>
+        AI & ML Student | Frontend Developer
+      </h3>
 
-<div className="hero-buttons">
+      <p className="hero-description">
+        I build responsive websites using HTML, CSS,
+        JavaScript and React.
+      </p>
 
-<a href="#projects" className="btn btn-primary">
-View Projects
-</a>
+      <div className="hero-buttons">
 
-<a
-href="/resume.pdf"
-className="btn"
->
-Download Resume
-</a>
+        <a href="#projects" className="btn btn-primary">
+          View Projects
+        </a>
 
-</div>
-<div className="tech-stack">
+        <a href="/resume.pdf" download className="btn">
+          Download Resume
+        </a>
 
-<span>HTML</span>
+      </div>
 
-<span>CSS</span>
+      <div className="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+      </div>
 
-<span>JavaScript</span>
-
-<span>React</span>
-
-</div>
-
-</section>
+    </section>
   );
 }
 
