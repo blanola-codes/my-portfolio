@@ -29,14 +29,21 @@ alt="Profile"
 <h4>AI & ML Student</h4>
 
 <p>
+I'm an AI & Machine Learning student with a strong interest in frontend
+development and modern web technologies. I enjoy transforming ideas into
+responsive, user-friendly websites using HTML, CSS, JavaScript, and React.
 
-I enjoy creating responsive websites and
-learning modern frontend technologies.
-
-Currently building projects using React,
-JavaScript and CSS.
-
+I'm continuously improving my skills by building real-world projects,
+exploring new technologies, and writing clean, maintainable code. My goal is
+to create intuitive digital experiences while growing as a full-stack
+developer.
 </p>
+<div className="about-highlights">
+  <p>🎓 AI & Machine Learning Student</p>
+  <p>💻 Frontend Developer (React)</p>
+  <p>🚀 Passionate about UI/UX & Web Development</p>
+  <p>📍 Based in Karnataka, India</p>
+</div>
 
 </div>
 

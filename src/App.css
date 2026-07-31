@@ -305,6 +305,14 @@ margin-bottom:40px;
     line-height:1.8;
     margin-bottom:30px;
 }
+.about-highlights{
+    margin-top:25px;
+}
+
+.about-highlights p{
+    margin:10px 0;
+    font-size:16px;
+}
 
 .stats-section{
     padding:40px 10% 80px;
