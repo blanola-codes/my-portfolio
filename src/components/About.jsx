@@ -1,58 +1,47 @@
 import profile from "../assets/Passport size Photo.jpeg";
 
-function About(){
+function About() {
+  return (
+    <section id="about" className="about-section">
+      <h2>About Me</h2>
 
-return(
+      <div className="about-container">
+        <div className="profile-photo">
+          <img
+            src={profile}
+            alt="Profile"
+          />
+        </div>
 
-<section
-id="about"
-className="about-section"
->
+        <div className="about-content">
+          <h3>Blanola Joylin Dsouza</h3>
 
-<h2>About Me</h2>
+          <h4>AI & ML Student</h4>
 
-<div className="about-container">
+          <p>
+            I'm a B.Tech student specializing in Artificial Intelligence and
+            Machine Learning with a growing passion for frontend development.
 
-<div className="profile-photo">
+            I enjoy building responsive web applications using HTML, CSS,
+            JavaScript and React while continuously improving my programming
+            and problem-solving skills.
 
-<img
-src={profile}
-alt="Profile"
-/>
+            Alongside web development, I have worked on projects involving
+            Python, C Programming and Arduino. I am currently looking for
+            internship opportunities where I can learn, contribute and grow
+            as a developer.
+          </p>
 
-</div>
-
-<div className="about-content">
-
-<h3>Blanola Joylin Dsouza</h3>
-
-<h4>AI & ML Student</h4>
-
-<p>
-I'm an AI & Machine Learning student with a strong interest in frontend
-development and modern web technologies. I enjoy transforming ideas into
-responsive, user-friendly websites using HTML, CSS, JavaScript, and React.
-
-I'm continuously improving my skills by building real-world projects,
-exploring new technologies, and writing clean, maintainable code. My goal is
-to create intuitive digital experiences while growing as a full-stack
-developer.
-</p>
-<div className="about-highlights">
-  <p>🎓 AI & Machine Learning Student</p>
-  <p>💻 Frontend Developer (React)</p>
-  <p>🚀 Passionate about UI/UX & Web Development</p>
-  <p>📍 Based in Karnataka, India</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-);
-
+          <div className="about-highlights">
+            <p>🎓 AI & ML Engineering Student</p>
+            <p>💻 Frontend Developer</p>
+            <p>🌱 Currently Learning React & APIs</p>
+            <p>🚀 Looking for Internship Opportunities</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default About;

@@ -1,11 +1,18 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
+
+  const year = new Date().getFullYear();
+
   return (
     <footer className="site-footer">
-      <p>&copy; 2026 Blanola Joylin Dsouza. Built with React ❤️</p>
+
+      <p>
+        &copy; {year} Blanola Joylin Dsouza. Built with React ❤️
+      </p>
 
       <div className="footer-icons">
+
         <a
           href="https://github.com/blanola-codes"
           target="_blank"
@@ -21,7 +28,9 @@ function Footer() {
         >
           <FaLinkedin />
         </a>
+
       </div>
+
     </footer>
   );
 }

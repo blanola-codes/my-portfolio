@@ -43,10 +43,6 @@ Feel free to reach out.
 
       </div>
 
-      <div className="contact-right">
-        {/* Your form */}
-      </div>
-
     </section>
   );
 }

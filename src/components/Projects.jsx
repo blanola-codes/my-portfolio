@@ -43,8 +43,21 @@ function Projects() {
             <span>API</span>
           </div>
 
-          <a href="#">Live Demo</a>
-          <a href="#">GitHub</a>
+          <a
+  href="https://your-project.netlify.app"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Live Demo
+</a>
+
+<a
+  href="https://github.com/blanola-codes/weather-app"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  GitHub
+</a>
         </article>
 
         <article

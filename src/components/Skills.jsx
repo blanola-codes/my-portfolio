@@ -1,9 +1,11 @@
+import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
+
 function Skills() {
   const skills = [
-    { name: "HTML", level: 90 },
-    { name: "CSS", level: 80 },
-    { name: "JavaScript", level: 75 },
-    { name: "React", level: 60 },
+    { name: "HTML", level: 90, icon: <FaHtml5 /> },
+    { name: "CSS", level: 80, icon: <FaCss3Alt /> },
+    { name: "JavaScript", level: 75, icon: <FaJs /> },
+    { name: "React", level: 60, icon: <FaReact /> },
   ];
 
   return (
@@ -13,6 +15,11 @@ function Skills() {
       <div className="skills-grid">
         {skills.map((skill) => (
           <div className="skills-items" key={skill.name}>
+
+            <div className="skill-icon">
+              {skill.icon}
+            </div>
+
             <div className="skill-header">
               <span>{skill.name}</span>
               <span>{skill.level}%</span>
@@ -24,6 +31,7 @@ function Skills() {
                 style={{ width: `${skill.level}%` }}
               ></div>
             </div>
+
           </div>
         ))}
       </div>

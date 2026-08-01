@@ -1,7 +1,7 @@
 function Stats() {
   const stats = [
     {
-      number: "3+",
+      number: "5+",
       label: "Projects"
     },
     {
@@ -9,12 +9,12 @@ function Stats() {
       label: "Technologies"
     },
     {
-      number: "100+",
-      label: "Hours Learning"
+      number: "10+",
+      label: "GitHub Repositories"
     },
     {
-      number: "2026",
-      label: "Graduate"
+      number: "2029",
+      label: "Expected Graduation Year"
     }
   ];
 
