@@ -1,122 +1,147 @@
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
+
 import weatherImg from "../assets/weather app.png";
 import todoImg from "../assets/To do list app.webp";
 import bmiImg from "../assets/BMI calculator app.jpg";
 
 function Projects() {
-  return (
-    <section id="projects" className="projects-section">
-      <h2>My Projects</h2>
 
-      <div className="filter-buttons">
-        <button className="filter btn active" data-filter="all">
-          All
-        </button>
-        <button className="filter btn" data-filter="web">
-          Web
-        </button>
-        <button className="filter btn" data-filter="design">
-          Design
-        </button>
-      </div>
+  const projects = [
+
+    {
+      id: "01",
+      title: "Weather App",
+      image: weatherImg,
+      description:
+        "A responsive weather application that fetches real-time weather information using an API.",
+
+      tech: ["React", "API", "CSS"],
+
+      github: "#",
+
+      live: "#",
+    },
+
+    {
+      id: "02",
+
+      title: "To-Do List",
+
+      image: todoImg,
+
+      description:
+        "A task management application for organizing daily activities with a clean and responsive UI.",
+
+      tech: ["React", "JavaScript"],
+
+      github: "#",
+
+      live: "#",
+    },
+
+    {
+      id: "03",
+
+      title: "BMI Calculator",
+
+      image: bmiImg,
+
+      description:
+        "A BMI calculator that calculates Body Mass Index and displays the health category instantly.",
+
+      tech: ["React", "CSS"],
+
+      github: "#",
+
+      live: "#",
+    },
+
+  ];
+
+  return (
+
+    <section
+      id="projects"
+      className="projects-section"
+    >
+
+      <h2>Featured Projects</h2>
 
       <div className="projects-grid">
 
-        <article
-          className="project-card"
-          data-category="web"
-          data-year="2026"
-        >
-          <img
-            src={weatherImg}
-            alt="Weather App Screenshot"
-            width="300"
-          />
-          <h3>Weather App</h3>
+        {projects.map((project) => (
 
-          <p>
-            A simple weather application that allows users to check the
-            current weather conditions for a specific location.
-          </p>
+          <div
+            className="project-card"
+            key={project.id}
+          >
 
-          <div className="project-tags">
-            <span>React</span>
-            <span>API</span>
+            <div className="project-image">
+
+              <img
+                src={project.image}
+                alt={project.title}
+              />
+
+            </div>
+
+            <div className="project-content">
+
+              <span className="project-number">
+                {project.id}
+              </span>
+
+              <h3>{project.title}</h3>
+
+              <p>{project.description}</p>
+
+              <div className="project-tags">
+
+                {project.tech.map((tech) => (
+
+                  <span key={tech}>
+                    {tech}
+                  </span>
+
+                ))}
+
+              </div>
+
+              <div className="project-links">
+
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaExternalLinkAlt />
+                  Live Demo
+                </a>
+
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub />
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
           </div>
 
-          <a
-  href="https://your-project.netlify.app"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Live Demo
-</a>
-
-<a
-  href="https://github.com/blanola-codes/weather-app"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  GitHub
-</a>
-        </article>
-
-        <article
-          className="project-card"
-          data-category="web"
-          data-year="2026"
-        >
-          <img
-            src={todoImg}
-            alt="To-do List App Screenshot"
-            width="300"
-          />
-
-          <h3>To-do List App</h3>
-
-          <p>
-            A simple task management application that helps users add,
-            organize, and track their daily tasks efficiently.
-          </p>
-
-          <div className="project-tags">
-            <span>React</span>
-            <span>API</span>
-          </div>
-
-          <a href="#">Live Demo</a>
-          <a href="#">GitHub</a>
-        </article>
-
-        <article
-          className="project-card"
-          data-category="web"
-          data-year="2026"
-        >
-          <img
-src={bmiImg}
-className="mobile-image"
-alt="BMI"
-/>
-
-          <h3>BMI Calculator App</h3>
-
-          <p>
-            A BMI calculator that allows users to calculate their Body Mass
-            Index using their height and weight and understand their
-            corresponding BMI category.
-          </p>
-
-          <div className="project-tags">
-            <span>React</span>
-            <span>API</span>
-          </div>
-
-          <a href="#">Live Demo</a>
-          <a href="#">GitHub</a>
-        </article>
+        ))}
 
       </div>
+
     </section>
+
   );
 }
 

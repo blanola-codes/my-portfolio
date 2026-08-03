@@ -1,38 +1,68 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {
 
-function Footer() {
+FaGithub,
 
-  const year = new Date().getFullYear();
+FaLinkedin,
 
-  return (
-    <footer className="site-footer">
+FaEnvelope
 
-      <p>
-        &copy; {year} Blanola Joylin Dsouza. Built with React ❤️
-      </p>
+} from "react-icons/fa";
 
-      <div className="footer-icons">
+function Footer(){
 
-        <a
-          href="https://github.com/blanola-codes"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
+const year=new Date().getFullYear();
 
-        <a
-          href="https://www.linkedin.com/in/blanola-joylin-dsouza-92278531a/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </a>
+return(
 
-      </div>
+<footer className="site-footer">
 
-    </footer>
-  );
+<h3>
+
+Blanola Joylin Dsouza
+
+</h3>
+
+<p>
+
+AI & ML Student • Frontend Developer
+
+</p>
+
+<div className="footer-icons">
+
+<a href="https://github.com/blanola-codes" target="_blank"
+rel="noopener noreferrer">
+
+<FaGithub/>
+
+</a>
+
+<a href="https://www.linkedin.com/in/blanola-joylin-dsouza-92278531a/" target="_blank"
+rel="noopener noreferrer">
+
+<FaLinkedin/>
+
+</a>
+
+<a href="mailto:blanolajoylindsouza@hotmail.com" target="_blank"
+rel="noopener noreferrer">
+
+<FaEnvelope/>
+
+</a>
+
+</div>
+
+<p>
+
+© {year} All Rights Reserved
+
+</p>
+
+</footer>
+
+);
+
 }
 
 export default Footer;
