@@ -3,9 +3,9 @@ import {
   FaExternalLinkAlt,
 } from "react-icons/fa";
 
-import weatherImg from "../assets/portfolio-project.png";
-import todoImg from "../assets/ai-dashboard.png";
-import bmiImg from "../assets/travel-booking.png";
+import portfolioImg from "../assets/portfolio-project.png";
+import dashboardImg from "../assets/ai-dashboard.png";
+import travelImg from "../assets/travel-booking.png";
 
 function Projects() {
 
