@@ -3,63 +3,80 @@ import {
   FaExternalLinkAlt,
 } from "react-icons/fa";
 
-import weatherImg from "../assets/weather app.png";
-import todoImg from "../assets/To do list app.webp";
-import bmiImg from "../assets/BMI calculator app.jpg";
+import weatherImg from "../assets/portfolio-project.png";
+import todoImg from "../assets/ai-dashboard.png";
+import bmiImg from "../assets/travel-booking.png";
 
 function Projects() {
 
-  const projects = [
+ const projects = [
 
-    {
-      id: "01",
-      title: "Weather App",
-      image: weatherImg,
-      description:
-        "A responsive weather application that fetches real-time weather information using an API.",
+  {
+    id: "01",
+    title: "Personal Portfolio Website",
 
-      tech: ["React", "API", "CSS"],
+    image: portfolioImg,
 
-      github: "#",
+    description:
+      "A modern responsive portfolio built using React showcasing my skills, projects, journey and contact information with dark mode support and smooth animations.",
 
-      live: "#",
-    },
+    tech: [
+      "React",
+      "CSS",
+      "JavaScript",
+      "Responsive Design"
+    ],
 
-    {
-      id: "02",
+    github: "https://github.com/blanola-codes",
 
-      title: "To-Do List",
+    live: "https://cheery-lily-00fc66.netlify.app/",
+  },
 
-      image: todoImg,
+  {
+    id: "02",
 
-      description:
-        "A task management application for organizing daily activities with a clean and responsive UI.",
+    title: "AI Task Manager",
 
-      tech: ["React", "JavaScript"],
+    image: dashboardImg,
 
-      github: "#",
+    description:
+      "A modern AI-powered task management dashboard with analytics, productivity charts, smart reminders and calendar integration.",
 
-      live: "#",
-    },
+    tech: [
+      "React",
+      "Chart.js",
+      "Node.js",
+      "AI"
+    ],
 
-    {
-      id: "03",
+    github: "#",
 
-      title: "BMI Calculator",
+    live: "#",
+  },
 
-      image: bmiImg,
+  {
+    id: "03",
 
-      description:
-        "A BMI calculator that calculates Body Mass Index and displays the health category instantly.",
+    title: "Travel Booking Website",
 
-      tech: ["React", "CSS"],
+    image: travelImg,
 
-      github: "#",
+    description:
+      "A modern travel booking platform featuring destination search, hotel booking, responsive layouts and beautiful UI inspired by real-world travel websites.",
 
-      live: "#",
-    },
+    tech: [
+      "React",
+      "API",
+      "CSS",
+      "UI/UX"
+    ],
 
-  ];
+    github: "#",
+
+    live: "#",
+  },
+
+];
 
   return (
 
@@ -68,7 +85,14 @@ function Projects() {
       className="projects-section"
     >
 
-      <h2>Featured Projects</h2>
+      <>
+  <h2>Featured Projects</h2>
+
+  <p className="project-subtitle">
+    A collection of projects showcasing my frontend development,
+    responsive design and React skills.
+  </p>
+</>
 
       <div className="projects-grid">
 
@@ -89,6 +113,12 @@ function Projects() {
             </div>
 
             <div className="project-content">
+
+              {project.id === "01" && (
+  <span className="featured-badge">
+    ⭐ Featured
+  </span>
+)}
 
               <span className="project-number">
                 {project.id}
@@ -113,21 +143,33 @@ function Projects() {
               <div className="project-links">
 
                 <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaExternalLinkAlt />
-                  Live Demo
+  href={project.live}
+  target="_blank"
+  rel="noreferrer"
+  onClick={(e) => {
+    if (project.live === "#") {
+      e.preventDefault();
+      alert("Demo coming soon!");
+    }
+  }}
+>
+                  <FaExternalLinkAlt style={{ marginRight: "8px" }} />
+Live Demo
                 </a>
 
                 <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaGithub />
-                  GitHub
+  href={project.github}
+  target="_blank"
+  rel="noreferrer"
+  onClick={(e) => {
+    if (project.github === "#") {
+      e.preventDefault();
+      alert("GitHub repository coming soon!");
+    }
+  }}
+>
+                  <FaGithub style={{ marginRight: "8px" }} />
+GitHub
                 </a>
 
               </div>
