@@ -29,7 +29,7 @@ function Projects() {
 
     github: "https://github.com/blanola-codes",
 
-    live: "https://cheery-lily-00fc66.netlify.app/",
+    live: "https://stalwart-lily-9cba09.netlify.app/",
   },
 
   {
