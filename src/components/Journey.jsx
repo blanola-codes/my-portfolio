@@ -3,19 +3,19 @@ function Journey() {
   const journey = [
 
     {
-      year: "2023",
+      year: "2025",
       title: "Started B.Tech",
       desc: "B.Tech in Artificial Intelligence & Machine Learning.",
     },
 
     {
-      year: "2024",
+      year: "2026",
       title: "Started Web Development",
       desc: "Learned HTML, CSS and JavaScript.",
     },
 
     {
-      year: "2025",
+      year: "2026",
       title: "React Development",
       desc: "Built responsive projects using React.",
     },
