@@ -17,8 +17,8 @@ Feel free to reach out.
 
         <p>
           📧{" "}
-          <a href="mailto:dsouzablanola@gmail.com">
-            dsouzablanola@gmail.com
+          <a href="mailto:blanolajoylindsouza@hotmail.com">
+            blanolajoylindsouza@hotmail.com
           </a>
         </p>
 
